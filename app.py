@@ -16,7 +16,7 @@ import re
 #     cv2.waitKey(0)
 #     cv2.destroyAllWindows()
 
-st.markdown("<h1 style='text-align: center; '>Examinee AI 🎓</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; '>Ansar Kun 解</h1>", unsafe_allow_html=True)
 a=st.text_input("Enter array of questions: ")
 
 
