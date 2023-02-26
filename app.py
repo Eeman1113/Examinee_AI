@@ -44,6 +44,7 @@ for i in q:
     c.append(response.choices[0].text)
     st.markdown('___')
     st.write(str(d)+". "+i+"?")
+    print(str(d)+". "+i+"?")
     st.write("Ans: "+response.choices[0].text)
 
 
