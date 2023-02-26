@@ -46,6 +46,7 @@ for i in q:
     st.write(str(d)+". "+i+"?")
     print(str(d)+". "+i+"?")
     st.write("Ans: "+response.choices[0].text)
+    st.balloons()
 
 
 
