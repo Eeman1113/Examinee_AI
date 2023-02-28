@@ -1,25 +1,48 @@
+#___________________________________________________________________________________________________________________
+
 import streamlit as st 
 import openai
 import re
-# import pywhatkit as kit
-# import cv2
 
-# def write_me(a):
-#     for i in range(0,len(a)):
-#         enter_what_you_want_to_write = a[i]
-#         kit.text_to_handwriting(enter_what_you_want_to_write, save_to="handwriting{}.png".format(i))
-#         img = cv2.imread("/Users/eemanmajumder/code_shit/Examinee_AI/Image/handwriting{}.png".format(i))
-#         cv2.imshow(img)
-#         st.markdown("___")
-#         st.image("/Users/eemanmajumder/code_shit/Examinee_AI/Image/handwriting{}.png".format(i))
+#___________________________________________________________________________________________________________________
 
-#     cv2.waitKey(0)
-#     cv2.destroyAllWindows()
+def add_newlines_and_split(text):
+    # Split the string into words
+    words = text.split()
+    
+    # Add a newline character after every 5th word
+    new_text = ""
+    for i, word in enumerate(words):
+        if (i+1) % 5 == 0:
+            new_text += f"{word}\n"
+        else:
+            new_text += f"{word} "
+    
+    # Split the string into lines
+    lines = new_text.split("\n")
+
+    # Split the lines into chunks of 21
+    chunks = [lines[i:i+21] for i in range(0, len(lines), 21)]
+    
+    # Join each chunk into a single string
+    chunk_strings = ["\n".join(chunk) for chunk in chunks]
+
+    return chunk_strings
+
+#___________________________________________________________________________________________________________________
+
+def group_elements(lst, n):
+    lst = ["".join(lst[i:i+n]) for i in range(0, len(lst), n)]
+    if len(lst) % 2 != 0:
+        lst.append("")
+    return lst
+
+#___________________________________________________________________________________________________________________
 
 st.markdown("<h1 style='text-align: center; '>Ansar Chan (◕ヮ◕) 解</h1>", unsafe_allow_html=True)
 a=st.text_input("Enter array of questions: ")
 
-
+#___________________________________________________________________________________________________________________
 q=re.split("[?.]",a)
 q=q[:len(q)-1]
 print(q)
@@ -40,25 +63,32 @@ for i in q:
     d=d+1
     b=response
     # c.append(d)
-    c.append(str(d)+". "+i+"?")
+    c.append(str(d)+". "+i+"?"+"\n"+"\n")
     c.append(response.choices[0].text)
     st.markdown('___')
     st.write(str(d)+". "+i+"?")
     print(str(d)+". "+i+"?")
     st.write("Ans: "+response.choices[0].text)
-    
 
-
-
-
-
-
-
+#___________________________________________________________________________________________________________________
 st.write(c)
 st.balloons()
-# write_me(c)
+#___________________________________________________________________________________________________________________
+st.markdown("___")
+st.markdown("<h2 style='text-align: center; '>BTW IK HOW TO WRITE NOW HEHE :)</h2>", unsafe_allow_html=True)
 
+title_text=group_elements(c,2)
+print(c)
+for i in range(0,len(title_text)):
 
+    title_text[i]=add_newlines_and_split(title_text[i])
+    from PIL import Image, ImageFont, ImageDraw 
+    for j in range(0,len(title_text[i])):
+        img_k = Image.open("/Image/Pages.png")
+        title_font = ImageFont.truetype('/fonts/Mynerve-Regular.ttf', 70)
+        img = ImageDraw.Draw(img_k)
+        img.text((100,100.3), title_text[i][j], (0,0,0), font=title_font)
+        img_k.save("/Image/result{}.png".format(i))
+        st.image('/Image/result{}.png'.format(i))
 
-
-
+#___________________________________________________________________________________________________________________
