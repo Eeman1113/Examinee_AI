@@ -75,8 +75,6 @@ st.write(c)
 st.balloons()
 #___________________________________________________________________________________________________________________
 st.markdown("___")
-st.markdown("<h2 style='text-align: center; '>BTW IK HOW TO WRITE NOW HEHE :)</h2>", unsafe_allow_html=True)
-
 title_text=group_elements(c,2)
 print(c)
 for i in range(0,len(title_text)):
