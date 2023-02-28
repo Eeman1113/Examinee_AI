@@ -34,7 +34,7 @@ def add_newlines_and_split(text):
 def group_elements(lst, n):
     lst = ["".join(lst[i:i+n]) for i in range(0, len(lst), n)]
     if len(lst) % 2 != 0:
-        lst.append("")
+        lst.append("\n")
     return lst
 
 #___________________________________________________________________________________________________________________
