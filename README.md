@@ -1,6 +1,6 @@
-# Ansar Chan (◕ヮ◕) 解
-___
-Have you ever had a list of questions that you needed to answer quickly? Maybe you're a teacher or a student preparing for an exam, or maybe you're just curious about a particular topic. Either way, answering a long list of questions can be a daunting task. Fortunately, there is a new tool that can help: Ansar Chan (◕ヮ◕) 解.<br>
+# <p align="center">Ansar Chan (◕ヮ◕) 解</p>
+<br>
+Have you ever had a list of questions that you needed to answer quickly? Maybe you're a teacher or a student preparing for an exam, or maybe you're just curious about a particular topic. Either way, answering a long list of questions can be a daunting task. Fortunately, there is a new tool that can help: Ansar Chan (◕ヮ◕) 解.<br><br>
 
 Ansar Chan (◕ヮ◕) 解 is a Streamlit app that uses OpenAI to generate answers to a list of questions. It takes an array of questions as input and generates an answer for each one using OpenAI's text-generation API. The app then displays the answers in a visually appealing format.<br>
 
