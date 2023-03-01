@@ -70,7 +70,7 @@ for i in q:
     d=d+1
     b=response
     # c.append(d)
-    c.append(str(d)+". "+i+"?"+"\n"+"\n")
+    c.append(str(d)+". "+i+"?")
     c.append(response.choices[0].text)
     st.markdown('___')
     st.write(str(d)+". "+i+"?")
