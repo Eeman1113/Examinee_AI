@@ -1,4 +1,6 @@
-# <p align="center">Ansar Chan (◕ヮ◕) 解</p>
+# <p align="center">Ansar Chan (◕ヮ◕) 解<br></p>
+<b><p align="center">Try Me: https://eeman1113-examinee-ai-app-l02w1q.streamlit.app</p></b>
+
 <br>
 Have you ever had a list of questions that you needed to answer quickly? Maybe you're a teacher or a student preparing for an exam, or maybe you're just curious about a particular topic. Either way, answering a long list of questions can be a daunting task. Fortunately, there is a new tool that can help: Ansar Chan (◕ヮ◕) 解.<br><br>
 
