@@ -55,6 +55,6 @@ To run the app, you can use the following command.
 Ansar Chan (◕ヮ◕) 解 is licensed under the MIT License. See the LICENSE file for more information.
 ___
 <p align="center">
-<h2> Help Me Do More Stuff Like This. </h2>
+  <b>Help Me Do More Stuff Like This.</b> <br><br>
 <a href="https://www.buymeacoffee.com/eeman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 </p>
