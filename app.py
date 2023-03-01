@@ -92,7 +92,7 @@ for i in range(0,len(title_text)):
         img_k = Image.open("Image/Pages.png")
         title_font = ImageFont.truetype('fonts/Mynerve-Regular.ttf', 70)
         img = ImageDraw.Draw(img_k)
-        img.text((100,100.3), title_text[i][j], (0,0,255), font=title_font)
+        img.text((100,100.3), title_text[i][j], (0,0,128), font=title_font)
         img_k.save("Image/result{}.png".format(i))
         st.image('Image/result{}.png'.format(i))
 
