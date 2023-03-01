@@ -3,6 +3,15 @@ Ansar Chan (◕ヮ◕) 解 is a Streamlit app that uses OpenAI's GPT-3 API to ge
 
 ## Usage
 To use Ansar Chan (◕ヮ◕) 解, you can run the app on Streamlit. When the app loads, enter an array of questions into the text input field and click "Enter". The app will use the OpenAI API to generate answers for each question and display them in a visually appealing format.
+* <b>Single Question: </b><br><br>
+`Hello I am a question?`<br>
+<i>Or</i><br>
+`Hello I am a question.`
+
+* <b>Multilple Questions: </b><br><br>
+`Hello I am question 1? Hello I am question 2? Hello I am question 3? Hello I am question 4?`<br>
+<i>Or</i><br>
+`Hello I am question 1. Hello I am question 2. Hello I am question 3. Hello I am question 4.`
 
 ## Dependencies
 * Streamlit
