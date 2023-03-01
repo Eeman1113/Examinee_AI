@@ -8,13 +8,13 @@ To use Ansar Chan (◕ヮ◕) 解, you first need to run the app on Streamlit. O
 
 <b>Here's how the app works:</b><br>
 
-<u><b>Input questions:</u></b> The first step is to input a list of questions into the app. You can enter the questions one at a time, separated by commas, or you can paste in a pre-existing list.<br>
+* <u><b>Input questions:</u></b> The first step is to input a list of questions into the app. You can enter the questions one at a time, separated by commas, or you can paste in a pre-existing list.<br>
 
-<u><b>Text processing:</u></b> The app processes the text by splitting it into individual questions and using regular expressions to remove any trailing punctuation.<br>
+* <u><b>Text processing:</u></b> The app processes the text by splitting it into individual questions and using regular expressions to remove any trailing punctuation.<br>
 
-<u><b>Text generation:</u></b> The app sends each question to OpenAI's text-generation API and waits for a response. Once a response is received, the app stores it in an array.<br>
+* <u><b>Text generation:</u></b> The app sends each question to OpenAI's text-generation API and waits for a response. Once a response is received, the app stores it in an array.<br>
 
-<u><b>Visual display:</u></b> Finally, the app displays the questions and answers in a visually appealing format. The answers are split into chunks of 21 words and displayed on a background image.<br>
+* <u><b>Visual display:</u></b> Finally, the app displays the questions and answers in a visually appealing format. The answers are split into chunks of 21 words and displayed on a background image.<br>
 
 Using Ansar Chan (◕ヮ◕) 解 can save you a lot of time and effort when you need to answer a list of questions quickly. Whether you're a student, a teacher, or just someone who's curious about the world, this app can help you get the answers you need in no time.<br>
 
