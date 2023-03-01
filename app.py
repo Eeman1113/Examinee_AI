@@ -34,8 +34,15 @@ def add_newlines_and_split(text):
 def group_elements(lst, n):
     lst = ["".join(lst[i:i+n]) for i in range(0, len(lst), n)]
     if len(lst) % 2 != 0:
-        lst.append("\n")
+        lst.append("")
     return lst
+
+#___________________________________________________________________________________________________________________
+
+def add_newline_after_question(arr):
+    for i in range(len(arr)):
+        arr[i] = arr[i].replace('?', '?\n')
+    return arr
 
 #___________________________________________________________________________________________________________________
 
@@ -75,7 +82,7 @@ st.write(c)
 st.balloons()
 #___________________________________________________________________________________________________________________
 st.markdown("___")
-title_text=group_elements(c,2)
+title_text=add_newline_after_question(group_elements(c,2))
 print(c)
 for i in range(0,len(title_text)):
 
