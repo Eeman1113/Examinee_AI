@@ -32,6 +32,11 @@ def add_newlines_and_split(text):
 
 #___________________________________________________________________________________________________________________
 
+def false():
+    return False
+
+#___________________________________________________________________________________________________________________
+
 def group_elements(lst, n):
     lst = ["".join(lst[i:i+n]) for i in range(0, len(lst), n)]
     if len(lst) % 2 != 0:
@@ -50,14 +55,15 @@ def add_newline_after_question(arr):
 with st.sidebar:
     st.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
     st.title("") 
-    agree=st.checkbox('Use Default Font')
-    cus=st.checkbox('Use Custom Font')
+    agree=st.checkbox('Use Default Font', value=True, key=None, on_change=false)
+    cus=st.checkbox('Use Custom Font', value=False, key=None, on_change=false)
     fo_sz=st.slider("Font Size", 10, 100, 70)
 
     if cus:
         agree=False
         cus_fon=st.file_uploader("Upload Font", type=["ttf"])
         time.sleep(5)
+        
         
 #___________________________________________________________________________________________________________________
 
