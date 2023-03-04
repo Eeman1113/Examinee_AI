@@ -63,8 +63,6 @@ if cus:
     cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
     time.sleep(5)
 
-
-        
 #___________________________________________________________________________________________________________________
 
 st.markdown("<h1 style='text-align: center; '>Ansar Chan (◕ヮ◕) 解</h1>", unsafe_allow_html=True)
