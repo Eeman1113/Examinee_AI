@@ -62,11 +62,10 @@ if cus:
     agree = False
     cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
     time.sleep(5)
-    if cus_fon is not None:
-        title_font = ImageFont.truetype(cus_fon, fo_sz)
-    else:
+    if cus_fon is None:
         st.sidebar.write("Please Upload Font")
         st.sidebar.write("Default Font will be used")
+        cus_fon="fonts/Mynerve-Regular.ttf"
         cus = False
     
 
