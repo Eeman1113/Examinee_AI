@@ -43,7 +43,9 @@ def add_newline_after_question(arr):
     for i in range(len(arr)):
         arr[i] = arr[i].replace('?', '?\n')
     return arr
-
+#___________________________________________________________________________________________________________________
+with st.sidebar:
+    st.title("Font Customization✍🏼") 
 #___________________________________________________________________________________________________________________
 
 st.markdown("<h1 style='text-align: center; '>Ansar Chan (◕ヮ◕) 解</h1>", unsafe_allow_html=True)
