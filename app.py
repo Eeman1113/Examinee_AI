@@ -67,7 +67,7 @@ if cus:
     if cus_fon is None:
         st.sidebar.write("Waiting for da font......")
         st.sidebar.write("Take your time upload...here is sample output while I wait") 
-        st.image("https://tenor.com/en-GB/view/hitopotato-yawn-sleepy-tired-wanna-sleep-gif-15343889")
+        st.image("https://tenor.com/en-GB/view/hitopotato-yawn-sleepy-tired-wanna-sleep-gif-15343889",output_format="auto")
         cus_fon="fonts/Mynerve-Regular.ttf"
         cus = False
         agree = True
