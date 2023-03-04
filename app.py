@@ -57,13 +57,13 @@ agree = st.sidebar.checkbox('Use Default Font', value=True)
 cus = st.sidebar.checkbox('Use Custom Font', value=False)
 fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
 
-yes="Meow meow"
+yes="Meow meow meow"
 
 
 if cus:
     agree = False
     cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
-    time.sleep(5)
+    # time.sleep(5)
     if cus_fon is None:
         st.sidebar.write("Please Upload Font")
         st.sidebar.write("Default Font will be used")
