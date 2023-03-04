@@ -56,13 +56,16 @@ st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼
 agree = st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false())
 cus = st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false())
 fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
-
-cus_fon = None
+cum=69
+cus_fon = "fonts/Mynerve-Regular.ttf"
 if cus:
     agree = False
     cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
     time.sleep(5)
-
+    if cus_fon is None:
+        st.sidebar.write("Please Upload Font")
+        st.sidebar.write("Default Font will be used")
+        cus = False
 
 #___________________________________________________________________________________________________________________
 
