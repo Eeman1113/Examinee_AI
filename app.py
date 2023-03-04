@@ -61,7 +61,7 @@ with st.sidebar:
     fo_sz=st.slider("Font Size", 10, 100, 70)
 
     if cus:
-        agree.value=False
+        agree=False
         cus_fon=st.file_uploader("Upload Font", type=["ttf"])
         time.sleep(5)
         
@@ -108,7 +108,7 @@ title_text=add_newline_after_question(group_elements(c,2))
 print(c)
 
 if agree:
-    cus.value=False
+    cus=False
     for i in range(0,len(title_text)):
     
         title_text[i]=add_newlines_and_split(title_text[i])
@@ -122,7 +122,7 @@ if agree:
             st.image('Image/result{}.png'.format(i))
 
 if cus:
-    agree.value=False
+    agree=False
     for i in range(0,len(title_text)):
     
         title_text[i]=add_newlines_and_split(title_text[i])
