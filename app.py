@@ -3,6 +3,7 @@
 import streamlit as st 
 import openai
 import re
+import time
 
 #___________________________________________________________________________________________________________________
 
@@ -43,7 +44,9 @@ def add_newline_after_question(arr):
     for i in range(len(arr)):
         arr[i] = arr[i].replace('?', '?\n')
     return arr
+
 #___________________________________________________________________________________________________________________
+
 with st.sidebar:
     st.title("Font Customization✍🏼") 
     agree = st.checkbox('Use Preset Font')
@@ -52,6 +55,8 @@ with st.sidebar:
 
     if cus:
         cus_fon=st.file_uploader("Upload Font", type=["ttf"])
+        time.sleep(5)
+        
 #___________________________________________________________________________________________________________________
 
 st.markdown("<h1 style='text-align: center; '>Ansar Chan (◕ヮ◕) 解</h1>", unsafe_allow_html=True)
