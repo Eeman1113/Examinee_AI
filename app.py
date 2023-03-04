@@ -76,7 +76,7 @@ if cus:
         file=open(cus_fon.name,"wb")
         file.write(cus_fon.getbuffer())
         file.close()
-        cus_fon="fonts/"+cus_fon.name
+        cus_fon="fonts/{}".format(cus_fon.name)
 
 #___________________________________________________________________________________________________________________
 
