@@ -70,8 +70,11 @@ agree=True
 cus=False
 fo_sz=70
 agree,cus,fo_sz,cus_fon=sidebar()
-if cuz_fon==0:
-    cus_fon='fonts/Mynerve-Regular.ttf'
+if cuz_fon != 0:
+    cus_fon = cuz_fon
+else:
+    cus_fon = 'fonts/Mynerve-Regular.ttf'
+
         
 #___________________________________________________________________________________________________________________
 
