@@ -58,7 +58,7 @@ def sidebar():
     agree=st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false)
     cus=st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false)
     fo_sz=st.sidebar.slider("Font Size", 10, 100, 70)
-    
+    cuz_fon='fonts/Mynerve-Regular.ttf'
     if cus:
         agree=False
         cus_fon=st.sidebar.file_uploader("Upload Font", type=["ttf"])
