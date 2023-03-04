@@ -48,7 +48,7 @@ with st.sidebar:
     st.title("Font Customization✍🏼") 
     agree = st.checkbox('Use Preset Font')
     cus=st.checkbox('Use Custom Font')
-    fo_sz=st.slider("Font Size", 10, 100, 50)
+    fo_sz=st.slider("Font Size", 10, 100, 70)
 
     if cus:
         cus_fon=st.file_uploader("Upload Font", type=["ttf"])
