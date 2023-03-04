@@ -61,7 +61,7 @@ fo_sz=st.sidebar.slider("Font Size", 10, 100, 70)
 
 if cus:
     agree=False
-    cus_fon=st.file_uploader("Upload Font", type=["ttf"])
+    cus_fon=st.sidebar.file_uploader("Upload Font", type=["ttf"])
     time.sleep(5)
         
         
