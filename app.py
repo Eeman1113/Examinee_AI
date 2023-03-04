@@ -51,26 +51,18 @@ def add_newline_after_question(arr):
     return arr
 
 #___________________________________________________________________________________________________________________
-def sidebar():
-    st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
-    agree = st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false())
-    cus = st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false())
-    fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
-    
-    cus_fon = None
-    if cus:
-        agree = False
-        cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
-        time.sleep(5)
-    return agree, cus, fo_sz, cus_fon
 
-cuz_fon = None
-agree, cus, fo_sz, cus_fon = sidebar()
+st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
+agree = st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false())
+cus = st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false())
+fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
 
-if cus_fon is not None:
-    cus_fon = cus_fon
-else:
-    cus_fon = 'fonts/Mynerve-Regular.ttf'
+cus_fon = None
+if cus:
+    agree = False
+    cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
+    time.sleep(5)
+
 
         
 #___________________________________________________________________________________________________________________
