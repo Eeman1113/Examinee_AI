@@ -67,7 +67,7 @@ if cus:
     if cus_fon is None:
         st.sidebar.write("Waiting for da font......")
         st.sidebar.write("Take your time upload...here is sample output while I wait") 
-        st.sidebar.markdown("![Alt Text](https://tenor.com/en-GB/view/hitopotato-yawn-sleepy-tired-wanna-sleep-gif-15343889)")
+        st.sidebar.markdown("![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGEwNzU2ZjQ2ZmRhZjZhMjJiNjk5NmNlNzg4M2M3YjEzY2YxYmVjOSZjdD1z/AtSsUa2HSU6sM08xuh/giphy.gif)")
         cus_fon="fonts/Mynerve-Regular.ttf"
         cus = False
         agree = True
