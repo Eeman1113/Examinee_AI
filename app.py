@@ -50,6 +50,7 @@ def add_newline_after_question(arr):
 with st.sidebar:
     st.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
     st.title("") 
+    agree=st.checkbox('Use Default Font')
     cus=st.checkbox('Use Custom Font')
     fo_sz=st.slider("Font Size", 10, 100, 70)
 
