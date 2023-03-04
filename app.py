@@ -64,6 +64,10 @@ def sidebar():
         cus_fon=st.sidebar.file_uploader("Upload Font", type=["ttf"])
         time.sleep(5)
     return agree,cus,fo_sz,cus_fon
+cuz_fon='fonts/Mynerve-Regular.ttf'
+agree=True
+cus=False
+fo_sz=70
 agree,cus,fo_sz,cus_fon=sidebar()
         
 #___________________________________________________________________________________________________________________
