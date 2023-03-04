@@ -48,6 +48,8 @@ with st.sidebar:
     st.title("Font Customization✍🏼") 
     agree = st.checkbox('Use Preset Font')
     cus=st.checkbox('Use Custom Font')
+    if cus:
+        cus_fon=st.file_uploader("Upload Font", type=["ttf"])
 #___________________________________________________________________________________________________________________
 
 st.markdown("<h1 style='text-align: center; '>Ansar Chan (◕ヮ◕) 解</h1>", unsafe_allow_html=True)
