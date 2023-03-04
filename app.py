@@ -52,26 +52,23 @@ def add_newline_after_question(arr):
 
 #___________________________________________________________________________________________________________________
 def sidebar():
-    # with st.sidebar:
     st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
-    #if one checkbox is checked, the other one will be unchecked
-    agree=st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false)
-    cus=st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false)
-    fo_sz=st.sidebar.slider("Font Size", 10, 100, 70)
+    agree = st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false())
+    cus = st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false())
+    fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
     
+    cus_fon = None
     if cus:
-        agree=False
-        cus_fon=st.sidebar.file_uploader("Upload Font", type=["ttf"])
+        agree = False
+        cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
         time.sleep(5)
-    cuz_fon=0
-    return agree,cus,fo_sz,cus_fon
-cuz_fon='fonts/Mynerve-Regular.ttf'
-agree=True
-cus=False
-fo_sz=70
-agree,cus,fo_sz,cus_fon=sidebar()
-if cuz_fon != 0:
-    cus_fon = cuz_fon
+    return agree, cus, fo_sz, cus_fon
+
+cuz_fon = None
+agree, cus, fo_sz, cus_fon = sidebar()
+
+if cus_fon is not None:
+    cus_fon = cus_fon
 else:
     cus_fon = 'fonts/Mynerve-Regular.ttf'
 
