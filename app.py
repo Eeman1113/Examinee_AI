@@ -52,18 +52,17 @@ def add_newline_after_question(arr):
 
 #___________________________________________________________________________________________________________________
 
-with st.sidebar:
-    st.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
-    st.title("") 
-    #if one checkbox is checked, the other one will be unchecked
-    agree=st.checkbox('Use Default Font', value=True, key=None, on_change=false)
-    cus=st.checkbox('Use Custom Font', value=False, key=None, on_change=false)
-    fo_sz=st.slider("Font Size", 10, 100, 70)
+# with st.sidebar:
+st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
+#if one checkbox is checked, the other one will be unchecked
+agree=st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false)
+cus=st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false)
+fo_sz=st.sidebar.slider("Font Size", 10, 100, 70)
 
-    if cus:
-        agree=False
-        cus_fon=st.file_uploader("Upload Font", type=["ttf"])
-        time.sleep(5)
+if cus:
+    agree=False
+    cus_fon=st.file_uploader("Upload Font", type=["ttf"])
+    time.sleep(5)
         
         
 #___________________________________________________________________________________________________________________
