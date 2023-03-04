@@ -69,7 +69,8 @@ if cus:
         st.sidebar.write("Default Font will be used")
         cus_fon="fonts/Mynerve-Regular.ttf"
         cus = False
-    
+#save cuz_fon as a .ttf file at fonts/ 
+cus_fon=cus_fon.name
 
 #___________________________________________________________________________________________________________________
 
