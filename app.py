@@ -59,7 +59,7 @@ fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
 
 yes="Meow"
 
-cus_fon = "fonts/Mynerve-Regular.ttf"
+
 if cus:
     agree = False
     cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
@@ -69,11 +69,12 @@ if cus:
         st.sidebar.write("Default Font will be used")
         cus_fon="fonts/Mynerve-Regular.ttf"
         cus = False
-#save cuz_fon as a .ttf file at fonts/ 
-file=open(cus_fon.name,"wb")
-file.write(cus_fon.getbuffer())
-file.close()
-cus_fon="fonts/"+cus_fon.name
+    else:
+        #save cuz_fon as a .ttf file at fonts/ 
+        file=open(cus_fon.name,"wb")
+        file.write(cus_fon.getbuffer())
+        file.close()
+        cus_fon="fonts/"+cus_fon.name
 
 #___________________________________________________________________________________________________________________
 
