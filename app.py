@@ -57,7 +57,7 @@ agree = st.sidebar.checkbox('Use Default Font', value=True)
 cus = st.sidebar.checkbox('Use Custom Font', value=False)
 fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
 
-yes="Meow"
+yes="Meow meow"
 
 
 if cus:
@@ -69,6 +69,8 @@ if cus:
         st.sidebar.write("Default Font will be used")
         cus_fon="fonts/Mynerve-Regular.ttf"
         cus = False
+        agree = True
+
     else:
         #save cuz_fon as a .ttf file at fonts/ 
         file=open(cus_fon.name,"wb")
