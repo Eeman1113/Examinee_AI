@@ -51,19 +51,20 @@ def add_newline_after_question(arr):
     return arr
 
 #___________________________________________________________________________________________________________________
-
-# with st.sidebar:
-st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
-#if one checkbox is checked, the other one will be unchecked
-agree=st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false)
-cus=st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false)
-fo_sz=st.sidebar.slider("Font Size", 10, 100, 70)
-
-if cus:
-    agree=False
-    cus_fon=st.sidebar.file_uploader("Upload Font", type=["ttf"])
-    time.sleep(5)
-        
+def sidebar():
+    # with st.sidebar:
+    st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
+    #if one checkbox is checked, the other one will be unchecked
+    agree=st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false)
+    cus=st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false)
+    fo_sz=st.sidebar.slider("Font Size", 10, 100, 70)
+    
+    if cus:
+        agree=False
+        cus_fon=st.sidebar.file_uploader("Upload Font", type=["ttf"])
+        time.sleep(5)
+    return agree,cus,fo_sz,cus_fon
+agree,cus,fo_sz,cus_fon=sidebar()
         
 #___________________________________________________________________________________________________________________
 
