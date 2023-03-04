@@ -49,6 +49,7 @@ with st.sidebar:
     agree = st.checkbox('Use Preset Font')
     cus=st.checkbox('Use Custom Font')
     fo_sz=st.slider("Font Size", 10, 100, 50)
+
     if cus:
         cus_fon=st.file_uploader("Upload Font", type=["ttf"])
 #___________________________________________________________________________________________________________________
@@ -91,16 +92,30 @@ st.balloons()
 st.markdown("___")
 title_text=add_newline_after_question(group_elements(c,2))
 print(c)
-for i in range(0,len(title_text)):
 
-    title_text[i]=add_newlines_and_split(title_text[i])
-    from PIL import Image, ImageFont, ImageDraw 
-    for j in range(0,len(title_text[i])):
-        img_k = Image.open("Image/Pages.png")
-        title_font = ImageFont.truetype('fonts/Mynerve-Regular.ttf', 70)
-        img = ImageDraw.Draw(img_k)
-        img.text((100,100.3), title_text[i][j], (0,0,128), font=title_font)
-        img_k.save("Image/result{}.png".format(i))
-        st.image('Image/result{}.png'.format(i))
+if agree:
+    for i in range(0,len(title_text)):
+    
+        title_text[i]=add_newlines_and_split(title_text[i])
+        from PIL import Image, ImageFont, ImageDraw 
+        for j in range(0,len(title_text[i])):
+            img_k = Image.open("Image/Pages.png")
+            title_font = ImageFont.truetype('fonts/Mynerve-Regular.ttf', 70)
+            img = ImageDraw.Draw(img_k)
+            img.text((100,100.3), title_text[i][j], (0,0,128), font=title_font)
+            img_k.save("Image/result{}.png".format(i))
+            st.image('Image/result{}.png'.format(i))
 
+if cus:
+    for i in range(0,len(title_text)):
+    
+        title_text[i]=add_newlines_and_split(title_text[i])
+        from PIL import Image, ImageFont, ImageDraw 
+        for j in range(0,len(title_text[i])):
+            img_k = Image.open("Image/Pages.png")
+            title_font = ImageFont.truetype(cus_fon, fo_sz)
+            img = ImageDraw.Draw(img_k)
+            img.text((100,100.3), title_text[i][j], (0,0,128), font=title_font)
+            img_k.save("Image/result{}.png".format(i))
+            st.image('Image/result{}.png'.format(i))
 #___________________________________________________________________________________________________________________
