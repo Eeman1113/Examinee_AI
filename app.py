@@ -52,37 +52,16 @@ def add_newline_after_question(arr):
 
 #___________________________________________________________________________________________________________________
 
-# st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
-# agree = st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false())
-# cus = st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false())
-# fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
-
-# cus_fon = None
-# if cus:
-#     agree = False
-#     cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
-#     time.sleep(5)
-
-import streamlit as st
-import time
-
-st.set_page_config(page_title="Font Customization", page_icon=":pencil2:")
-
 st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
+agree = st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=false())
+cus = st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=false())
+fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
 
-agree = st.sidebar.checkbox('Use Default Font', value=True, key=None, on_change=None)
-cus = st.sidebar.checkbox('Use Custom Font', value=False, key=None, on_change=None)
-
+cus_fon = None
 if cus:
     agree = False
-
-fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
-cus_fon = None
-
-if cus:
     cus_fon = st.sidebar.file_uploader("Upload Font", type=["ttf"])
     time.sleep(5)
-
 
 
 #___________________________________________________________________________________________________________________
