@@ -73,6 +73,9 @@ if cus:
         agree = True
 
     else:
+        st.sidebar.write("Font uploaded")
+        st.sidebar.write("Answering your questions now...")
+        st.sidebar.markdown("![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODY0NzA3Y2U1NWIzOTVmZmU3ZDRhN2E5ZWI5ZGIzOGU2NGY0N2Y4MiZjdD1z/Mh2Ii2JozoJonEdfOo/giphy.gif)")
         #save cuz_fon as a .ttf file at fonts/ 
         file=open(cus_fon.name,"wb")
         file.write(cus_fon.getbuffer())
