@@ -164,5 +164,5 @@ if cus:
 #___________________________________________________________________________________________________________________
 st.markdown("___")
 st.session_state["Visits"]=st.session_state.get("Visits",0)+1
-st.write("I have been visited ",st.session_state["Visits"]," times")
+st.write("I have been used ",st.session_state["Visits"]," times this session.")
 #___________________________________________________________________________________________________________________
