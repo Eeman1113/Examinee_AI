@@ -80,7 +80,6 @@ if cus:
         cus_fon="fonts/Mynerve-Regular.ttf"
         cus = False
         agree = True
-        
 
     else:
         st.sidebar.write("Font uploaded")
@@ -91,7 +90,6 @@ if cus:
         file.write(cus_fon.getbuffer())
         file.close()
         cus_fon="fonts/{}".format(cus_fon.name)
-        
 
 #___________________________________________________________________________________________________________________
 
@@ -128,7 +126,7 @@ for i in q:
 
 #___________________________________________________________________________________________________________________
 st.write(c)
-st.balloons()
+
 #___________________________________________________________________________________________________________________
 st.markdown("___")
 title_text=add_newline_after_question(group_elements(c,2))
@@ -147,6 +145,7 @@ if agree:
             img.text((100,100.3), title_text[i][j], (0,0,128), font=title_font)
             img_k.save("Image/result{}.png".format(i))
             st.image('Image/result{}.png'.format(i))
+            st.balloons()
 
 if cus:
     agree=False
@@ -161,4 +160,5 @@ if cus:
             img.text((100,100.3), title_text[i][j], (0,0,128), font=title_font)
             img_k.save("Image/result{}.png".format(i))
             st.image('Image/result{}.png'.format(i))
+            st.balloons()
 #___________________________________________________________________________________________________________________
