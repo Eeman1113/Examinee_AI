@@ -162,3 +162,7 @@ if cus:
             st.image('Image/result{}.png'.format(i))
             st.balloons()
 #___________________________________________________________________________________________________________________
+st.markdown("___")
+st.session_state["Visits"]=st.session_state.get("Visits",0)+1
+st.write("I have been visited ",st.session_state["Visits"]," times")
+#___________________________________________________________________________________________________________________
