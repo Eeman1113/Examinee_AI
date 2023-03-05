@@ -53,8 +53,8 @@ def add_newline_after_question(arr):
 #___________________________________________________________________________________________________________________
 
 st.sidebar.markdown("<h1 style='text-align: center; '>Font Customization ✍🏼</h1>", unsafe_allow_html=True)
-agree = st.sidebar.checkbox('Use Default Font', value=True)
-cus = st.sidebar.checkbox('Use Custom Font', value=False)
+agree = st.sidebar.radio('Use Default Font', value=True)
+cus = st.sidebar.radio('Use Custom Font', value=False)
 fo_sz = st.sidebar.slider("Font Size", 10, 100, 70)
 
 yes="Meow meow meow meow"
