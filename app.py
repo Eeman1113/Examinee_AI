@@ -80,6 +80,7 @@ if cus:
         cus_fon="fonts/Mynerve-Regular.ttf"
         cus = False
         agree = True
+        st.sidebar.exit()
 
     else:
         st.sidebar.write("Font uploaded")
