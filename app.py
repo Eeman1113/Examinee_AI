@@ -91,6 +91,7 @@ if cus:
         file.write(cus_fon.getbuffer())
         file.close()
         cus_fon="fonts/{}".format(cus_fon.name)
+        st.sidebar.exit()
 
 #___________________________________________________________________________________________________________________
 
